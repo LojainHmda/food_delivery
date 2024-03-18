@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:food_delivery/models/food_items.dart';
 
 class FavoritesPage extends StatefulWidget {
-  const FavoritesPage({Key? key});
+  const FavoritesPage({super.key});
 
   @override
   State<FavoritesPage> createState() => _FavoritesPageState();

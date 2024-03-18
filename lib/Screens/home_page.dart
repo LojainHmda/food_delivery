@@ -132,7 +132,7 @@ class _HomePageState extends State<HomePage> {
                                     ? Colors.white
                                     : Colors.black,
                               ),
-                              SizedBox(
+                              const SizedBox(
                                 height: 8,
                               ),
                               Text(

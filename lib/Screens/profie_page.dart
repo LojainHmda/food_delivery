@@ -49,7 +49,7 @@ class ProfilePage extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.redAccent,
+                  backgroundColor: Colors.redAccent,
                   padding:
                       const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
                   shape: RoundedRectangleBorder(

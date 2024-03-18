@@ -25,10 +25,11 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
     quantity++;
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("details page"),
+          title: const Text("details page"),
           actions: [
             IconButton(
               
@@ -45,7 +46,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                       : Icons.favorite_border,
                   color: Colors.red,
                 )),
-            SizedBox(
+            const SizedBox(
               width: 6,
             )
           ],
@@ -122,14 +123,14 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                                 ProuductDetailsProperty(
                                     title: "Size", value: "Mefium"),
                                 SizedBox(
-                                  child: VerticalDivider(),
                                   height: 40,
+                                  child: VerticalDivider(),
                                 ),
                                 ProuductDetailsProperty(
                                     title: "Calories", value: "150kal"),
                                 SizedBox(
-                                  child: VerticalDivider(),
                                   height: 40,
+                                  child: VerticalDivider(),
                                 ),
                                 ProuductDetailsProperty(
                                     title: "Cooking", value: "10-20 Min"),
@@ -172,12 +173,12 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
                     Expanded(
                       child: ElevatedButton(
                         onPressed: () {},
-                        child: const Text("CheckOut"),
                         style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.deepOrange,
                             foregroundColor: Colors.white,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(8))),
+                        child: const Text("CheckOut"),
                       ),
                     )
                   ],
